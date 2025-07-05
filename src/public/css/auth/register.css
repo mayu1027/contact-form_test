@@ -1,0 +1,60 @@
+/* ページ全体の背景色 */
+.content { 
+    background-color: #F1ECE7;
+}
+
+/* フォーム全体の中央寄せ */
+.register-form__inner {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+/* フォームの白い枠 */
+.register-form__form {
+    padding: 64px 96px;
+    width: 40vw;
+    border: 1px solid #C5B9B0;
+    border-radius: 8px;
+    background-color: #FDFEFE;
+}
+
+/* スクリーンが1200px以下の時、フォームの横幅を60vwにしてレスポンシブ対応 */
+@media screen and (max-width: 1200px) {
+    .register-form__form {
+        width: 60vw;
+    }
+}
+
+/* 各フォーム項目ごとの上下の余白 */
+.register-form__group {
+    margin-bottom: 32px;
+}
+
+/* ラベル(名前など)をブロック要素にして下に余白をつける */
+.register-form__label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* 入力欄の見た目 */
+.register-form__input {
+    display: block;
+    padding: 8px 12px;
+    width: 100%;
+    height: 48px;
+    border: none;
+    background-color: #F4F4F4;
+    color: #BEB1A6;
+    font-family: serif;
+}
+
+/* バリデーションエラーのメッセージの色 */
+.register-form__error-message {
+    color: #FF9494;
+}
+
+/* 送信ボタンの位置調整 */
+.register-form__btn {
+    margin: 60px auto 0;
+}
